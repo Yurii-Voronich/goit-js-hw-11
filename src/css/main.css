@@ -1,27 +1,32 @@
-.timer {
+.form-wrapper {
   display: flex;
-  margin-left: 20px;
-  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
 }
-#datetime-picker {
-  margin-left: 20px;
-  margin-bottom: 32px;
+.input-field {
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  padding-left: 16px;
+  margin-right: 8px;
 }
-.field {
-  display: flex;
-  flex-direction: column;
-}
-.value {
-  text-align: center;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-}
-.label {
+.input-field ::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #2e2f42;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
 }

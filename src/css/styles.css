@@ -7,6 +7,7 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./main.css');
-@import 'node_modules/modern-normalize/modern-normalize.css';
+@import 'modern-normalize/modern-normalize.css';
 @import 'izitoast/dist/css/iziToast.min.css';
+@import 'simplelightbox/dist/simple-lightbox.min.css';
 /* Sections style */
