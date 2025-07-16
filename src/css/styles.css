@@ -6,9 +6,7 @@
 */
 /* Common styles */
 @import url('./reset.css');
-@import url('./1-timer.css');
-@import url('./2-snackbar.css');
+@import url('./main.css');
 @import 'node_modules/modern-normalize/modern-normalize.css';
-@import 'flatpickr/dist/flatpickr.min.css';
 @import 'izitoast/dist/css/iziToast.min.css';
 /* Sections style */
