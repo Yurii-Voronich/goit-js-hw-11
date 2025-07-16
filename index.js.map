@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/main.js"],"sourcesContent":["const formEl = document.querySelector('.form');\nlet query = null;\nconst onSubmit = e => {\n  e.preventDefault();\n\n  query = formEl.elements[0].value;\n};\n\nformEl.addEventListener('submit', onSubmit);\n"],"names":["formEl","onSubmit","e"],"mappings":"ssBAAA,MAAMA,EAAS,SAAS,cAAc,OAAO,EAEvCC,EAAWC,GAAK,CACpBA,EAAE,eAAc,EAERF,EAAO,SAAS,CAAC,EAAE,KAC7B,EAEAA,EAAO,iBAAiB,SAAUC,CAAQ"}
