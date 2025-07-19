@@ -1,3 +1,5 @@
+import { galleryEl, loaderEl } from '../main';
+import SimpleLightbox from 'simplelightbox';
 export const createMarkup = arr => {
   return arr
     .map(
@@ -29,4 +31,17 @@ export const createMarkup = arr => {
       }
     )
     .join('');
+};
+export const clearMarkup = () => {
+  galleryEl.innerHTML = '';
+};
+const gallery = new SimpleLightbox('.gallery a');
+export function createLightbox() {
+  gallery.refresh();
+}
+export const showLoader = () => {
+  loaderEl.classList.remove('visually-hidden');
+};
+export const hideLoader = () => {
+  loaderEl.classList.add('visually-hidden');
 };
