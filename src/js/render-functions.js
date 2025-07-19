@@ -21,22 +21,27 @@ export const createMarkup = arr => {
 		  alt="${tags}" 
 		/>
 	</a>
-        <ul class = "describtion">
-        <li class = "describtion-item">Likes <p>${likes}</p><li>
-        <li class = "describtion-item">Views <p>${views}</p><li>
-        <li class = "describtion-item">Downloads <p>${downloads}</p><li>
-        <li class = "describtion-item">Comments <p>${comments}</p><li>
+        <ul class = "description">
+        <li class = "description-item">Likes <p>${likes}</p><li>
+        <li class = "description-item">Views <p>${views}</p><li>
+        <li class = "description-item">Downloads <p>${downloads}</p><li>
+        <li class = "description-item">Comments <p>${comments}</p><li>
         </ul>
 </li>`;
       }
     )
     .join('');
 };
-export const clearMarkup = () => {
+export const renderGallery = arr => {
+  clearMarkup();
+  galleryEl.innerHTML = createMarkup(arr);
+  createLightbox();
+};
+const clearMarkup = () => {
   galleryEl.innerHTML = '';
 };
 const gallery = new SimpleLightbox('.gallery a');
-export function createLightbox() {
+function createLightbox() {
   gallery.refresh();
 }
 export const showLoader = () => {
